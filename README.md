@@ -26,7 +26,7 @@
     - Zig
 
 ### Shema arhitekture
-    [slika sheme diagrama arhitekture](slika_arhitekture.png)
+![slika sheme diagrama arhitekture](slika_arhitekture.svg)
 
 ### Seznam mikrostoritev
 - Entry\

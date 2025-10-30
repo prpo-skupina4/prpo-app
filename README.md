@@ -2,9 +2,9 @@
 
 
 ## Skupina
-- Ime skupina: **FRIDOM**
+- Ime skupine: **FRIDOM**
 - 4. skupina
-- člani: **Monika Simičak**, **Adrian Sebastian Šiška**
+- Člani: **Monika Simičak**, **Adrian Sebastian Šiška**
 - GitHub povezava: [github.com/orgs/prpo-skupina4](https://github.com/orgs/prpo-skupina4)
 
 ## Projekt
@@ -25,30 +25,21 @@
     - VSCode
     - Zig
 
-### Shema arhitekture
-![slika sheme diagrama arhitekture](slika_arhitekture.svg)
-
 ### Seznam mikrostoritev
 - Entry\
     Http routing.
 - Event view\
-    Vrne podatke o urniku za prikaz.
-    (Monika)
+    Vrne podatke o urniku za prikaz. (Monika)
 - Optimizator\
-    Optimizira urnik glede na želje, filtre.
-    (Monika)
+    Optimizira urnik glede na želje, filtre. (Monika)
 - Boolean\
-    Vrne podatke skupnega urnika za več oseb.
-    (Adrian)
+    Vrne podatke skupnega urnika za več oseb. (Adrian)
 - Kosilo\
-    Doda kosilo na urnik, ki si ga deli več ljudi.
-    (Adrian)
+    Doda kosilo na urnik, ki si ga deli več ljudi. (Adrian)
 - User managment\
-    Poskribi za avtentiakcijo in avtorizacijo uporabnikov.
-    (Adrian)
+    Poskribi za avtentiakcijo in avtorizacijo uporabnikov. (Adrian)
 - iCal\
-    Prevzame podatke o urniku iz iCal povezave. (npr. `urnik.fri.uni-lj.si`)
-    (Monika)
+    Prevzame podatke o urniku iz iCal povezave. (npr. `urnik.fri.uni-lj.si`) (Monika)
 
 ### Primeri uporabe
 
@@ -57,3 +48,6 @@
 - Uporabnik želi najti uro, ko ima z drugim uporabnikom hkrati pavzo. Klikne na gumb "kombiniraj urnik" in izbere enega ali več uporabnikov.
 Aplikacija mu prikaže kombiniran urnik.
 - Uporabnik želi vključiti kosilo v urnik, klikne gumb "dodaj kosilo", na urniku se mu prikaže ena izmed možnosti za kosila, lahko jo potrdi ali pa zahteva nov urnik s klikom na gumb, "drug termin". (Kjer sodeluje več mikrostoritev)
+
+### Shema arhitekture
+![slika sheme diagrama arhitekture](slika_arhitekture.svg){ width=50% }

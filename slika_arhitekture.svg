@@ -27,17 +27,36 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.5981902"
-     inkscape:cx="549.9971"
-     inkscape:cy="518.08601"
+     inkscape:cx="79.464885"
+     inkscape:cy="536.23154"
      inkscape:window-width="3840"
      inkscape:window-height="2067"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g3"
+     inkscape:current-layer="layer1"
      inkscape:export-bgcolor="#ffffffff" />
   <defs
      id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
     <marker
        style="overflow:visible"
        id="marker26"
@@ -265,16 +284,41 @@
          id="path22" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker26)"
-         d="m 76.102222,158.45436 25.859498,87.53276"
-         id="path23" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker26)"
          d="m 52.769105,240.56411 30.228439,15.49488"
          id="path24" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker26)"
-         d="m 155.2419,240.44638 -27.05811,15.61261"
-         id="path25" />
+         d="M 132.38358,234.32096 75.906111,117.8232"
+         id="path25"
+         sodipodi:nodetypes="cc" />
     </g>
+    <g
+       id="g2"
+       transform="matrix(0.42134628,0,0,0.42134628,17.231411,64.193995)">
+      <ellipse
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.265999;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse1"
+         cx="105.76627"
+         cy="282.76526"
+         rx="19.022711"
+         ry="7.5505524" />
+      <path
+         id="path2"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.265999;stroke-linejoin:round"
+         d="m 86.743568,282.76526 v -26.57327 h 38.045422 v 26.57327"
+         sodipodi:nodetypes="cccc" />
+      <ellipse
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.265999;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse2"
+         cx="105.76627"
+         cy="256.19199"
+         rx="19.022711"
+         ry="7.5505524" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 110.7254,62.031252 c 2.88817,42.078168 -1.86244,69.978008 -33.607025,97.391818"
+       id="path3"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

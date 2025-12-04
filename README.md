@@ -22,6 +22,7 @@
     - Kubernetes
     - Python
     - SQLite
+    - SQLAlchemy
     - VSCode
     - Zig
 

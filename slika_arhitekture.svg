@@ -7,7 +7,7 @@
    viewBox="0 0 194.32324 282.02924"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
    sodipodi:docname="slika_arhitekture.svg"
    inkscape:export-filename="slika_arhitekture.png"
    inkscape:export-xdpi="600"
@@ -27,15 +27,16 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.5981902"
-     inkscape:cx="79.464885"
-     inkscape:cy="536.23154"
+     inkscape:cx="202.1036"
+     inkscape:cy="692.65848"
      inkscape:window-width="3840"
      inkscape:window-height="2067"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
-     inkscape:export-bgcolor="#ffffffff" />
+     inkscape:current-layer="g25"
+     inkscape:export-bgcolor="#ffffffff"
+     showgrid="false" />
   <defs
      id="defs1">
     <marker
@@ -266,30 +267,28 @@
          sodipodi:nodetypes="cc" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker26)"
-         d="M 76.221391,104.30298 130.64211,217.19587"
-         id="path19" />
+         d="M 76.221391,110.59395 130.64211,217.19587"
+         id="path19"
+         sodipodi:nodetypes="cc" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker26)"
+         style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker26);marker-start:url(#Triangle)"
          d="M 30.085146,99.955203 C -2.4583197,138.72326 -2.5363611,177.80348 29.851022,217.19587"
          id="path20"
          sodipodi:nodetypes="cc" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker26)"
+         style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker26);marker-start:url(#Triangle)"
          d="M 132.04687,99.955206 77.261465,99.253176"
          id="path21"
          sodipodi:nodetypes="cc" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker26)"
-         d="M 132.04843,158.61592 105.76627,245.949"
-         id="path22" />
+         style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:;marker-start:url(#Triangle)"
+         d="M 132.04843,158.61592 76.221391,104.30298"
+         id="path22"
+         sodipodi:nodetypes="cc" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker26)"
-         d="m 52.769105,240.56411 30.228439,15.49488"
-         id="path24" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker26)"
-         d="M 132.38358,234.32096 75.906111,117.8232"
-         id="path25"
+         d="M 70.734578,123.34144 101.15028,245.33968"
+         id="path4"
          sodipodi:nodetypes="cc" />
     </g>
     <g

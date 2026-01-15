@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: boolean-ms
-        image: adrian4096/boolean-ms:${TAG}
+        image: adrian4096/prpo-app-boolean:${TAG}
         ports:
         - containerPort: 8000
         livenessProbe:

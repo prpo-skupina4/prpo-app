@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: user-managment-ms
-        image: adrian4096/user-managment-ms:${TAG}
+        image: adrian4096/prpo-app-users:${TAG}
         ports:
         - containerPort: 8000
         livenessProbe:

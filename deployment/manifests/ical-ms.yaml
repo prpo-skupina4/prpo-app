@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ical-ms
+  namespace: prpo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ical-ms
+  template:
+    metadata:
+      labels:
+        app: ical-ms
+    spec:
+      containers:
+      - name: ical-ms
+        image: adrian4096/ical-ms:${TAG}
+        ports:
+        - containerPort: 8000
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ical-ms
+  namespace: prpo
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 8000
+    protocol: TCP
+  selector:
+    app: ical-ms

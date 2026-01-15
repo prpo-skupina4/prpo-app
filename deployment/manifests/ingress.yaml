@@ -1,0 +1,54 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: prpo-ingress
+  namespace: prpo
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: webapprouting.kubernetes.azure.com
+  rules:
+  - http:
+      paths:
+      - path: /user-management
+        pathType: Prefix
+        backend:
+          service:
+            name: user-managment-ms
+            port:
+              number: 80
+      - path: /kosilo
+        pathType: Prefix
+        backend:
+          service:
+            name: kosilo-ms
+            port:
+              number: 80
+      - path: /boolean
+        pathType: Prefix
+        backend:
+          service:
+            name: boolean-ms
+            port:
+              number: 80
+      - path: /optimizator
+        pathType: Prefix
+        backend:
+          service:
+            name: optimizator-ms
+            port:
+              number: 80
+      - path: /event-view
+        pathType: Prefix
+        backend:
+          service:
+            name: event-view-ms
+            port:
+              number: 80
+      - path: /ical
+        pathType: Prefix
+        backend:
+          service:
+            name: ical-ms
+            port:
+              number: 80

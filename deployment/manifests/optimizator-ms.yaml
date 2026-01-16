@@ -2,9 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: optimizator-ms
-  namespace: prpo
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: optimizator-ms
@@ -35,9 +34,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: optimizator-ms
-  namespace: prpo
 spec:
-  type: ClusterIP
   ports:
   - port: 80
     targetPort: 8000

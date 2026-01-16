@@ -2,9 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kosilo-ms
-  namespace: prpo
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: kosilo-ms
@@ -24,20 +23,22 @@ spec:
             port: 8000
           initialDelaySeconds: 30
           periodSeconds: 10
+          timeoutSeconds: 10
+          failureThreshold: 3
         readinessProbe:
           httpGet:
             path: /health
             port: 8000
           initialDelaySeconds: 5
           periodSeconds: 5
+          timeoutSeconds: 10
+          failureThreshold: 3
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: kosilo-ms
-  namespace: prpo
 spec:
-  type: ClusterIP
   ports:
   - port: 80
     targetPort: 8000

@@ -17,6 +17,16 @@ spec:
         image: adrian4096/prpo-app-event-view:${TAG}
         ports:
         - containerPort: 8000
+        env:
+        - name: ICAL_URL
+          value: "http://ical-ms"
+        - name: OPTIMIZER_URL
+          value: "http://optimizator-ms"
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: jwt-secrets
+              key: jwt-secret
         livenessProbe:
           httpGet:
             path: /health

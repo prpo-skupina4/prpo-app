@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: event-view-ms
-        image: adrian4096/event-view-ms:${TAG}
+        image: adrian4096/prpo-app-event-view:${TAG}
         ports:
         - containerPort: 8000
         livenessProbe:

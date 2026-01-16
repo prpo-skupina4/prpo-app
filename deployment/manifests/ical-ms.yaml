@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: ical-ms
-        image: adrian4096/ical-ms:${TAG}
+        image: adrian4096/prpo-app-ical:${TAG}
         ports:
         - containerPort: 8000
         livenessProbe:

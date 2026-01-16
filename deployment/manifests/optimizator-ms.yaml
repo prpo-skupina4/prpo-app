@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: optimizator-ms
-        image: adrian4096/optimizator-ms:${TAG}
+        image: adrian4096/prpo-app-optimizator:${TAG}
         ports:
         - containerPort: 8000
         livenessProbe:

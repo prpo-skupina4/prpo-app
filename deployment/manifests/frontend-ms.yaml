@@ -17,9 +17,6 @@ spec:
         image: adrian4096/prpo-app-frontend:${TAG}
         ports:
         - containerPort: 8000
-        env:
-        - name: VITE_API_URL
-          value: "http://api.fritime.computers.si"
         livenessProbe:
           httpGet:
             path: /

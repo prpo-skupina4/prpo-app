@@ -7,7 +7,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /user-management
+      - path: /auth
         pathType: Prefix
         backend:
           service:
@@ -21,31 +21,45 @@ spec:
             name: kosilo-ms
             port:
               number: 80
-      - path: /boolean
+      - path: /bool
         pathType: Prefix
         backend:
           service:
             name: boolean-ms
             port:
               number: 80
-      - path: /optimizator
+      - path: /optimizacije
         pathType: Prefix
         backend:
           service:
             name: optimizator-ms
             port:
               number: 80
-      - path: /event-view
+      - path: /urniki
         pathType: Prefix
         backend:
           service:
             name: event-view-ms
             port:
               number: 80
-      - path: /ical
+      - path: /podatki
         pathType: Prefix
         backend:
           service:
             name: ical-ms
+            port:
+              number: 80
+      - path: /vremena
+        pathType: Prefix
+        backend:
+          service:
+            name: weather-ms
+            port:
+              number: 80
+      - path: /*
+        pathType: Prefix
+        backend:
+          service:
+            name: frontend-ms
             port:
               number: 80

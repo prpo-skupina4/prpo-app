@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: weather-view-ms
+  name: weather-ms
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: weather-view-ms
+      app: weather-ms
   template:
     metadata:
       labels:
-        app: weather-view-ms
+        app: weather-ms
     spec:
       containers:
-      - name: weather-view-ms
+      - name: weather-ms
         image: adrian4096/prpo-app-weather:${TAG}
         ports:
         - containerPort: 8000

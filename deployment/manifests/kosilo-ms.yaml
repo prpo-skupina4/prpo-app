@@ -17,6 +17,11 @@ spec:
         image: adrian4096/prpo-app-kosilo:${TAG}
         ports:
         - containerPort: 8000
+        env:
+        - name: EV_URL
+          value: "http://event-view-ms"
+        - name: BOOL_URL
+          value: "http://boolean-ms"
         livenessProbe:
           httpGet:
             path: /health

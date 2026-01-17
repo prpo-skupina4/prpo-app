@@ -27,6 +27,11 @@ spec:
             secretKeyRef:
               name: jwt-secrets
               key: jwt-secret
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: db-secrets
+              key: db-secret
         livenessProbe:
           httpGet:
             path: /health

@@ -18,16 +18,8 @@ spec:
         ports:
         - containerPort: 8000
         env:
-        - name: URNIK_URL
+        - name: VITE_API_URL
           value: "http://api.fritime.computers.si"
-        - name: USERS_URL
-          value: "http://api.fritime.computers.si/auth"
-        - name: BOOL_URL
-          value: "http://api.fritime.computers.si/bool"
-        - name: KOSILO_URL
-          value: "http://api.fritime.computers.si/kosilo"
-        - name: VREME_API
-          value: "http://api.fritime.computers.si/vreme"
         livenessProbe:
           httpGet:
             path: /

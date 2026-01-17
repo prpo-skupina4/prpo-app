@@ -49,7 +49,7 @@ spec:
             name: ical-ms
             port:
               number: 80
-      - path: /vremena
+      - path: /vreme
         pathType: Prefix
         backend:
           service:

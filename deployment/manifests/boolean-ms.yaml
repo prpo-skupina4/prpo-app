@@ -22,7 +22,7 @@ spec:
           value: "http://event-view-ms"
         livenessProbe:
           httpGet:
-            path: /health
+            path: /bool/health
             port: 8000
           initialDelaySeconds: 30
           periodSeconds: 10
@@ -30,7 +30,7 @@ spec:
           failureThreshold: 3
         readinessProbe:
           httpGet:
-            path: /health
+            path: /bool/health
             port: 8000
           initialDelaySeconds: 5
           periodSeconds: 5

@@ -2,14 +2,11 @@
 
 set -e
 
-# Configuration
-NAMESPACE="${NAMESPACE:-prpo}"
 TAG="${TAG:-latest}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MANIFESTS_DIR="${SCRIPT_DIR}/manifests"
 
 echo "==> Deploying to AKS cluster"
-echo "    Namespace: ${NAMESPACE}"
 echo "    Image Tag: ${TAG}"
 echo ""
 
@@ -24,9 +21,6 @@ if ! kubectl cluster-info &> /dev/null; then
     echo "Error: kubectl is not configured or cannot connect to cluster"
     exit 1
 fi
-
-echo "==> Creating namespace (if not exists)"
-kubectl apply -f "${MANIFESTS_DIR}/namespace.yaml"
 
 echo ""
 echo "==> Applying manifests with TAG=${TAG}"

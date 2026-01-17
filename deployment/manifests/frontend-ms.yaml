@@ -19,19 +19,19 @@ spec:
         - containerPort: 8000
         env:
         - name: URNIK_URL
-          value: "http://event-view-ms"
+          value: "http://api.fritime.computers.si"
         - name: USERS_URL
-          value: "http://user-managment-ms"
+          value: "http://api.fritime.computers.si/auth"
         - name: BOOL_URL
-          value: "http://boolean-ms"
+          value: "http://api.fritime.computers.si/bool"
         - name: KOSILO_URL
-          value: "http://kosilo-ms"
+          value: "http://api.fritime.computers.si/kosilo"
         - name: VREME_API
-          value: "http://weather-ms"
+          value: "http://api.fritime.computers.si/vreme"
         livenessProbe:
           httpGet:
             path: /
-            port: 8000
+            port: 80
           initialDelaySeconds: 30
           periodSeconds: 10
           timeoutSeconds: 10
@@ -39,7 +39,7 @@ spec:
         readinessProbe:
           httpGet:
             path: /
-            port: 8000
+            port: 80
           initialDelaySeconds: 5
           periodSeconds: 5
           timeoutSeconds: 10
@@ -52,7 +52,7 @@ metadata:
 spec:
   ports:
   - port: 80
-    targetPort: 8000
+    targetPort: 80
     protocol: TCP
   selector:
     app: frontend-ms

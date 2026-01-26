@@ -1,0 +1,58 @@
+services:
+  ical:
+    build: ./iCal-ms
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./iCal-ms:/app
+  users:
+    build: ./User-managment-ms
+    ports:
+      - "8006:8000"
+    
+    volumes:
+      - ./User-managment-ms:/app
+
+  boolean:
+    build: ./Boolean-ms
+    ports:
+      - "8004:8000"
+    volumes:
+      - ./Boolean-ms:/app
+
+  kosilo:
+    build: ./Kosilo-ms
+    ports:
+      - "8005:8000"
+    volumes:
+      - ./Kosilo-ms:/app
+  optimizer:
+    build: ./Optimizator-ms
+    ports:
+      - "8003:8000"
+    volumes:
+      - ./Optimizator-ms:/app
+  event-view:
+    build: ./Event-view-ms
+    ports:
+      - "8002:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/data
+      - ./Event-view-ms:/app
+  weather:
+    build: ./weather-ms
+    ports:
+      - "8007:8000"
+    env_file:
+      - .env
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: "http://event-view:8002"
+    ports:
+      - "8080:80"
+    depends_on:
+      - event-view
